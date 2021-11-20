@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+button {
+    display: block;
+    margin: 0.25em 0px;
+    padding: 0.25rem 0px;
+    text-transform: capitalize;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid transparent;
+    letter-spacing: var(--spacing);
+    color: #617d98;
+    cursor: pointer;
+}
+
+.product {
+    margin-top: 90px;
+}
+
+.search-input {
+    padding: 0.5rem;
+    background:#f1f5f8;
+    border-radius: 4px;
+    border-color: transparent;
+    letter-spacing:2px;
+    text-transform: capitalize;
+}
+
+.category-title {
+    margin: 16px 0 10px 0;
+    font-weight: 500;
+    letter-spacing:2px;
+}
+
+.category-list {
+    list-style-type: none;
+}
+
+.category-list > li {
+    color: #617d98;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+
+.category-list > li:hover,
+.category-list > li.active {
+    color: #795744;
+}
+
+.company {
+    background: #f1f5f8;
+    border-radius: 2px;
+    border-color: transparent;
+    padding: 0.25rem;
+    margin: 16px 0;
+}
+
+.colors {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.all-btn {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.color-btn {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: rgb(34, 34, 34);
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.fitler-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+hr {
+    border-top: 1px solid #bcccdc;
+    border-top: 1px solid var(--clr-grey-8);
+    width: 50%;
+    height: 2px;
+}
+
+.sort-input {
+    border-color: transparent;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+}
+
+.product-img > .overlay {
+    display: none;
+    transition: all 0.3s linear;
+}
+
+.product-img > .overlay > .btn {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+
+}
+
+.product-img:hover > .overlay {
+    display: block;
+}
+
+.product-category{
+    display: none;
+}
+
+.cart-item-category{
+    text-transform: capitalize;
+
+}

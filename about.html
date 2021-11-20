@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart - Furniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="grid wide">
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-brand">Vintage.</a>
+                <div class="nav-menu">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="navbar-collapse ">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-cart">
+                    <button class="cart-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count-info">0</span>
+
+                    </button>
+                    <div class="cart-container show">
+
+                        <div class="cart-list">
+                            <!-- single item -->
+                            <!-- <div class="cart-item">
+                                <img src="images/armchair.png" alt="product image">
+                                <div class="cart-item-info">
+                                    <h3 class="cart-item-name">Arm Chair</h3>
+                                    <span class="cart-item-category">Chair</span>
+                                    <span class="cart-item-price">$120.00</span>
+                                </div>
+
+                                <button type="button" class="cart-item-del-btn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div> -->
+                            <!-- end of single item  -->
+                        </div>
+
+                        <div class="cart-total">
+                            <h3>Total: $</h3>
+                            <span class="cart-total-value">0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--end header -->
+    <!-- breadcumb -->
+    <div class="breadcumb">
+        <div class="grid wide">
+            <div class="breacumb-container">
+                <div class="breadcumb-content">
+                    <h3>
+                        <a href="index.html">Home</a>
+                        <a href="#">/ About</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcumb -->
+    <!-- story -->
+    <div class="story">
+        <div class="grid wide">
+            <div class="story-container">
+                <div class="row">
+                    <div class="col l-6">
+                        <img src="./images/about.jpeg" class="story-img" alt="">
+                    </div>
+                    <div class="col l-6">
+                        <div class="story-content">
+                            <h2>Our Story</h2>
+                            <div class="underline"></div>
+                            <p class="story-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                                cumque deserunt reprehenderit hic laboriosam, aperiam minima. Libero ipsum a, illo
+                                laboriosam sequi necessitatibus inventore ducimus quibusdam nemo optio rerum est. Magnam
+                                voluptas consequuntur asperiores, ex nisi repellendus inventore nulla est.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end story -->
+
+    <!-- footer socials -->
+    <div class="footer-socials">
+        <div class="grid wide">
+            <ul class="social-list">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end footer socials -->
+
+    <script type="module" src="./product.js"></script>
+
+</body>
+
+</html>
