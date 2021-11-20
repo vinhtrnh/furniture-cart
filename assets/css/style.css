@@ -55,7 +55,7 @@ header{
     display: flex;
     padding: 44px 80px;
     justify-content: space-between;
-
+    width: 100%;
 }
 
 .nav-brand {
@@ -133,9 +133,15 @@ header{
     padding: 10px;
 }
 
-.nav-list > li:hover {
+.nav-list > li > a,
+.cart-btn {
+    transition: all 0.3s ease
+}
+
+.nav-list > li:hover a {
     cursor: pointer;
-    color: #ccc;
+    color: palevioletred;
+    
 }
 
 .nav-list > li ~ li  {
@@ -211,6 +217,10 @@ header{
 
 .cart-total > span {
     font-size: 18px;
+}
+
+.cart-btn:hover {
+    color: palevioletred;
 }
 
 /* banner  */
@@ -418,4 +428,166 @@ header{
 }    
 button.btn.add-to-cart.center {
     left: 105px
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 99;
+}
+
+.modal-clicked {
+    display: block;
+}
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 470px;
+    background-color: #fff;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    padding: 16px;
+    border-radius: 4px;
+
+}
+
+.login-form > h3 {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: center;
+  
+}
+
+.field {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    display: flex;
+}
+.field > span {
+    position: absolute;
+    left: 7px;
+    width: 24px;
+    height: 24px;
+    color: #222;
+    line-height: 48px;
+}
+.field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+.space {
+    margin-top: 16px;
+}
+
+.forgot {
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 12px 0;
+    display: inline-block;
+}
+
+.btn-primary {
+    margin: 0;
+    background-color: #3498db;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.login {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.link {
+    display: flex;
+    cursor: pointer;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.facebook, .instagram {
+    width: 80%;
+    height: 42px;
+    line-height: 42px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.facebook {
+    background: #4267B2;
+    border: 1px solid #3e61a8;
+}
+
+.instagram {
+    background: #E1306C;
+    border: 1px solid #df2060;
+}
+
+.facebook:hover, .instagram:hover {
+    opacity: 0.9;
+}
+
+.sign-up {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sign-up a {
+    color: blue;
+}
+
+.show-btn {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.password:valid ~ .show {
+    display: block;
+}
+
+.form-close-btn{
+    position: absolute;
+    top: 21px;
+    right: 17px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.empty-cart {
+    padding: 16px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.empty-btn{
+    margin-left: 16px;
+    padding: 12px 50px;
 }

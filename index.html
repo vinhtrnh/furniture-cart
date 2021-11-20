@@ -27,14 +27,24 @@
                     </button>
                     <div class="navbar-collapse ">
                         <ul class="nav-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="index.html">Home
+                                    <i class="fas fa-home"></i>
+                                </a></li>
+                            <li><a href="about.html">About
+                                    <i class="fas fa-info"></i>
+                                </a></li>
+                            <li><a href="products.html">Products
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a></li>
+                            <li><a class="login-btn" href="#">Login
+                                    <i class="fas fa-user"></i>
+                                </a></li>
 
                         </ul>
                     </div>
                 </div>
                 <div class="navbar-cart">
+
                     <button class="cart-btn" id="cart-btn">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count-info">0</span>
@@ -43,6 +53,13 @@
                     <div class="cart-container show">
 
                         <div class="cart-list">
+                            <div class="empty-cart">
+
+                                <h3>
+                                    It is Empty
+                                    <a href="./products.html" class="btn empty-btn">Fill it</a>
+                                </h3>
+                            </div>
                             <!-- single item -->
                             <!-- <div class="cart-item">
                                 <img src="images/armchair.png" alt="product image">
@@ -59,10 +76,10 @@
                             <!-- end of single item  -->
                         </div>
 
-                        <div class="cart-total">
+                        <!-- <div class="cart-total">
                             <h3>Total: $</h3>
                             <span class="cart-total-value">0.00</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </nav>
@@ -227,7 +244,62 @@
     </div>
     <!-- end footer socials -->
 
-    <script type="module" src="./product.js"></script>
+    <!-- overlay form login/register -->
+    <div class="modal ">
+        <div class="modal-container">
+            <form class="login-form">
+                <h3>Login Form </h3>
+                <span class="form-close-btn"><i class="fas fa-times"></i></span>
+                <div class="field">
+                    <span class="fas fa-user">
+                    </span>
+
+                    <input type="text" required placeholder="Email or username">
+                </div>
+                <div class="field space">
+                    <span class="fas fa-lock">
+                    </span>
+
+                    <input type="password" required class="password password-field" placeholder="Password"
+                        name="password">
+                    <h4 class="show-btn show-password">SHOW</h4>
+                </div>
+                <a href="" class="forgot">Forgot Password?</a>
+                <button type="submit" class="btn btn-primary">login</button>
+                <div class="login">Or login with</div>
+                <div class="link">
+                    <div class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="sign-up"> Don't have an account?
+                    <a href="/">Signup now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./header.js">
+    </script>
+    <script>
+        const passField = document.querySelector('.password-field')
+        const showBtn = document.querySelector('.show-password')
+        showBtn.addEventListener('click', () => {
+            if (passField.type === 'password') {
+                passField.type = 'text'
+                showBtn.style.color = '#3498db'
+                showBtn.textContent = "HIDE"
+            } else {
+                passField.type = 'password'
+                showBtn.style.color = '#222'
+                showBtn.textContent = "SHOW"
+            }
+        })
+        console.log(passField)
+    </script>
 
 
 </body>

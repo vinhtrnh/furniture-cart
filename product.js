@@ -1,6 +1,5 @@
 
-const navBars = document.querySelector('.nav-toggle')
-const cartBtn = document.querySelector('.cart-btn')
+
 const productList = document.querySelector('.product-list')
 const cartList = document.querySelector('.cart-list')
 const cartTotalValue = document.querySelector('.cart-total-value')
@@ -18,15 +17,6 @@ function eventListener() {
         loadCarts()
     })
 
-    // show hide menu bars
-    navBars.addEventListener('click', () => {
-        document.querySelector('.navbar-collapse').classList.toggle('show')
-    })
-
-    // show hide cart container
-    cartBtn.addEventListener('click', () => {
-        document.querySelector('.cart-container').classList.toggle('cart-container--show')
-    })
 
     productList.addEventListener('click', purchaseProduct)
 
@@ -71,7 +61,7 @@ function loadJSON() {
             productList.innerHTML = html
         })
         .catch(error => {
-            alert('Use live server or local server please')
+            // alert('Use live server or local server please')
         })
 }
 
@@ -178,3 +168,7 @@ function deleteProduct(e) {
 
 }
 
+// password hide show
+
+
+console.log('123')
