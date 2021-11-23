@@ -24,7 +24,7 @@
     body {
         margin: -8px;
         padding-left: 16px;
-        padding-right: 11px;
+        padding-right: 7px;
     }
     
    .nav-bar {
@@ -54,7 +54,6 @@
     }
 
     .featured {
-      
         padding: 0px;
     }
 }
